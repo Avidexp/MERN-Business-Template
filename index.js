@@ -6,4 +6,5 @@ app.get('/', (req,res,next) =>{
     console.log("Home page viewed")
 });
 
-app.listen(PROCESS.ENV.PORT || 5000);
+const port = process.env.PORT || 5000;
+app.listen(port);
