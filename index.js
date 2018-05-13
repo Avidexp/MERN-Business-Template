@@ -6,4 +6,4 @@ app.get('/', (req,res,next) =>{
     console.log("Home page viewed")
 });
 
-app.listen(5000);
+app.listen(PROCESS.ENV.port || 5000);
