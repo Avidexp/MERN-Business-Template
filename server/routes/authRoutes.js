@@ -7,5 +7,18 @@ module.exports = (app) =>{
     app.get('/auth/google', passport.authenticate('google',{
             scope: ['profile', 'email']
         })
-    )
+    );
+
+    app.get('/api/logout', (req, res) => {
+        // attached to request object by passport, takes cookie, and kills id thats in there effectively logging out. 
+        req.logout();
+        // sends nothing because req.user has been removed by passport
+        res.send(req.user);
+    });
+
+    app.get('/api/current_user', (req, res) => {
+        res.send(req.user);
+    });
+
+
 }

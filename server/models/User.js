@@ -6,7 +6,8 @@ const userSchema = new Schema({
     googleId: String,
     firstName: String,
     lastName: String,
-    displayName: String
+    displayName: String,
+    email: String
 });
 
 // Store data in the users collection using the above schema
