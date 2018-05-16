@@ -27,7 +27,7 @@ class Header extends Component{
             <div>
             <nav>
             <div class="nav-wrapper">
-           <a className="left brand-logo" href="/">Emaily</a>
+           <a className="left brand-logo" href="/">Logo</a>
            <ul className="right">
            {this.renderContent()}
 

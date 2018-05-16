@@ -6,11 +6,11 @@ import * as actions from '../actions';
 
 import Header from './Header';
 import Dashboard from './Dashboard';
+import Landing from './Landing';
 
 const SurveyNew = () =>  <h2>SurveyNew</h2>;
 
 
-const Landing = () => <h2>Landing</h2>;
 
 class App extends Component {
     componentDidMount(){
