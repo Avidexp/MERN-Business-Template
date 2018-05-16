@@ -5,3 +5,12 @@ module.exports = {
     cookieKeys: ['a;lsjfdlajsldfjasjdf;2ef2f242423H#&@$*&@#H#klhjwdh23hd2h329(*(#*(@h9hd3982h23', 'l2kj32jf02jk23f2#&^*@HD#)(#Uj23d90j2f30ijf320ijf2ihjf0i2h30if@#()*#$I@P#I_D@#)Kh2302h3f0hi230ih23f0h23f0h', '023fj23kjf23jk23jokfj2okj#)@(#JD)(#@JDPOK#@)(#J@)(DJ#J@)#(J23kjf2kjfkhkshfiohd0ihfh*#HIH#Kh20h30h*#H08h3hkl']
 };
 
+module.exports = {
+    googleClientID: process.env.GOOGLE_CLIENT_ID,
+    googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
+    MongoURL: process.env.MONGO_URL,
+    cookieKeys:process.env.COOKIE_KEY
+};
+
+
+
