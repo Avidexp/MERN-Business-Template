@@ -1,7 +1,12 @@
 const passport = require('passport');
 
 module.exports = (app) =>{
-    app.get('/auth/google/callback',passport.authenticate('google'));
+    app.get('/auth/google/callback', 
+        passport.authenticate('google'),
+        (req,res) => {
+            res.redirect('/dashboard')
+        }
+);
 
 
     app.get('/auth/google', passport.authenticate('google',{
@@ -13,7 +18,8 @@ module.exports = (app) =>{
         // attached to request object by passport, takes cookie, and kills id thats in there effectively logging out. 
         req.logout();
         // sends nothing because req.user has been removed by passport
-        res.send(req.user);
+        res.redirect('/');
+        //res.send(req.user);
     });
 
     app.get('/api/current_user', (req, res) => {
