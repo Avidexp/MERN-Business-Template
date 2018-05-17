@@ -6,22 +6,9 @@ class Payments extends React.Component {
     constructor(props){
         super(props);
     }
-  onToken = (token) => {
-    fetch('/save-stripe-token', {
-      method: 'POST',
-      body: JSON.stringify(token),
-    }).then(response => {
-      response.json().then(data => {
-        alert(`We are in business, ${data.email}`);
-      });
-    });
-  }
-
-  // ...
 
   render() {
     return (
-      // ...
       <StripeCheckout
         name="Emaily"
         description={this.props.description}
