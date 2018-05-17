@@ -7,7 +7,11 @@ const userSchema = new Schema({
     firstName: String,
     lastName: String,
     displayName: String,
-    email: String
+    email: String,
+    credits: {
+        type: Number,
+        default: 0
+    }
 });
 
 // Store data in the users collection using the above schema

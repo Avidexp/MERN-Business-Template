@@ -7,9 +7,9 @@ import * as actions from '../actions';
 import Header from './Header';
 import Dashboard from './Dashboard';
 import Landing from './Landing';
-
+import BuyCredits from './BuyCredits';
 const SurveyNew = () =>  <h2>New Survey</h2>;
-const BuyCredits = () =>  <h2>Buy Credits</h2>;
+
 
 
 class App extends Component {
