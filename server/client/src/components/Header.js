@@ -14,10 +14,8 @@ class Header extends Component{
                 </li>            );
             default:
                 return( <div>
-   
-            <li>
-                <Link to="/newSurvey">New Survey</Link>
-            </li>
+            <li style={{margin: '0 10px'}}>Credits: {this.props.auth.credits} </li>
+
             <li>
                 <Link to="/BuyCredits">Buy Credits</Link>
             </li>
