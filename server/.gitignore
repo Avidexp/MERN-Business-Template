@@ -1,4 +1,4 @@
 node_modules
-prodKeys.js
-devKeys.js
-config
+/config/prodKeys.js
+/config/devKeys.js
+/config
