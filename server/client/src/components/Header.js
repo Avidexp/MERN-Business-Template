@@ -16,6 +16,9 @@ class Header extends Component{
                 <Link to="/newSurvey">New Survey</Link>
             </li>
             <li>
+                <Link to="/BuyCredits">Buy Credits</Link>
+            </li>
+            <li>
                 <Link to="/dashboard">Dashboard</Link>
             </li>
             <li>

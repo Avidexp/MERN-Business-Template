@@ -8,8 +8,8 @@ import Header from './Header';
 import Dashboard from './Dashboard';
 import Landing from './Landing';
 
-const SurveyNew = () =>  <h2>SurveyNew</h2>;
-
+const SurveyNew = () =>  <h2>New Survey</h2>;
+const BuyCredits = () =>  <h2>Buy Credits</h2>;
 
 
 class App extends Component {
@@ -27,6 +27,7 @@ class App extends Component {
                         <Route exact path="/" component={Landing}/>
                         <Route exact path="/dashboard" component={Dashboard}/>
                         <Route exact path="/newSurvey" component={SurveyNew}/>
+                        <Route exact path="/BuyCredits" component={BuyCredits}/>
                     </div>
                 </BrowserRouter>
             </div>
