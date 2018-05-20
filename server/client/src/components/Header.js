@@ -33,8 +33,9 @@ class Header extends Component{
             <nav>
             <div className="nav-wrapper">
            <Link className="left brand-logo" 
-            to={this.props.auth ? "/dashboard" : "/"}
-           >Logo</Link>
+        //    Different route if user is authenticated (logged in)
+            to={this.props.auth ? "/" : "/"} 
+           >Need A Tool</Link>
            <ul className="right">
            {this.renderContent()}
 

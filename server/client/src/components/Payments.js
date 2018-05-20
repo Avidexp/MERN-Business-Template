@@ -18,7 +18,7 @@ class Payments extends React.Component {
       >
       {/* Custom button */}
       <button className="btn">
-        Add Credits
+        Purchase
       </button>
       </StripeCheckout>
     )
