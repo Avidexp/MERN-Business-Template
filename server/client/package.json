@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "proxy": {
+    "/signupUser": {
+      "target": "http://localhost:5000"
+    },
+    "/loginUser": {
+      "target": "http://localhost:5000"
+    },
     "/auth/google": {
       "target": "http://localhost:5000"
     },

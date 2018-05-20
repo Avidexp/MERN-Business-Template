@@ -5,7 +5,8 @@ const passport = require('passport');
 const keys = require('./config/keys');
 const app = express();
 const bodyParser = require('body-parser');
-
+const flash = require('connect-flash');
+const  morgan = require('morgan')
 require('./models/User');
 require('./services/passport');
 
@@ -14,6 +15,8 @@ require('./services/passport');
 mongoose.connect(keys.MongoURL);
 
 // app.use is used to 'use' middleware
+app.use(morgan('dev'));
+app.use(flash());
 app.use(bodyParser.json()); //parses requests
 app.use(
     cookieSession({
