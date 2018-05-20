@@ -104,11 +104,8 @@ app.post('/signupUser', function(req,res,next){
                 if (err){
                     res.send({"Error": err});
                 } else {
-                    passport.authenticate('local',{username: email,password: password});
-                    res.redirect('/dashboard');
-                    // res.send({"Success": true});
                     
-                
+
                 }
             });
         }
@@ -117,7 +114,7 @@ app.post('/signupUser', function(req,res,next){
     //if user does exist return an error
 
     //if a user with email does not exist, create / save user 
-
+    res.redirect('/login');
     //respond to request
 });
 

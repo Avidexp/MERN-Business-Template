@@ -31,7 +31,6 @@ class Login extends Component{
         .then(response => {
             console.log(response);
             console.log(this.props);
-            this.props.history.push('/dashboard');
         });
         this.props.fetchUser();
     }

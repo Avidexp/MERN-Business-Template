@@ -39,15 +39,15 @@ class Signup extends Component{
 
         return(
             <div>
-<form>
+<form action="http://localhost:3000/signupUser" method="post">
     <div>
     <input type="text" name="firstName" placeholder="FirstName" value={this.state.firstName} onChange={this.handleFirstChange} />
     <input type="text" name="lastName" placeholder="lastName" value={this.state.lastName} onChange={this.handleLastChange} />
 
-    <input type="text" name="email" placeholder="Email" value={this.state.email} onChange={this.handleEmailChange} />
+    <input type="text" name="username" placeholder="Email" value={this.state.email} onChange={this.handleEmailChange} />
           <input type="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handlePasswordChange}/>
           </div>
-          <button type="button" onClick={this.handleSubmit}>Login</button>
+          <button type="submit" onClick={this.handleSubmit}>Sign Up</button>
 
 
 </form>
