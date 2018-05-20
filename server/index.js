@@ -20,7 +20,7 @@ app.use(
         // 30 days in milliseconds
         maxAge:30 * 24 * 60 * 60 * 1000,
         // takes an array of keys and picks one at random for additional security
-        keys: keys.cookieKeys
+        keys: [keys.cookieKey]
     })
 );
 
