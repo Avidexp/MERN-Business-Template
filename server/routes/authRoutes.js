@@ -1,18 +1,20 @@
 const passport = require('passport');
 
 module.exports = (app) =>{
+    app.get('/auth/google', passport.authenticate('google',{
+        scope: ['profile', 'email']
+    })
+);
+
     app.get('/auth/google/callback', 
         passport.authenticate('google'),
         (req,res) => {
-            res.redirect('/dashboard')
+            res.redirect('/dashboard');
         }
 );
 
 
-    app.get('/auth/google', passport.authenticate('google',{
-            scope: ['profile', 'email']
-        })
-    );
+
 
     app.get('/api/logout', (req, res) => {
         // attached to request object by passport, takes cookie, and kills id thats in there effectively logging out. 
