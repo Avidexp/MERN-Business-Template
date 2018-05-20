@@ -57,14 +57,18 @@ app.post('/signupUser', function(req,res,next){
     var password = req.body.password;
     var firstname = req.body.firstName;
     var lastName = req.body.lastName;
+    var error = "";
     User.findOne({ email :  email }, function(err, user) {
         // if there are any errors, return the error
-        if (err)
-            res.send({"Error": err})
+        if (err){
+            error = err;
+            //             res.send({"Error": err})
+
+        }
 
         // check to see if theres already a user with that email
         if (user) {
-           res.send({"Error": "Email already exists"})
+           error = "Email already exists";
         } else {
 
             // if there is no user with that email
@@ -102,7 +106,7 @@ app.post('/signupUser', function(req,res,next){
             // save the user
             newUser.save(function(err) {
                 if (err){
-                    res.send({"Error": err});
+                    error =  err;
                 } else {
                     
 
@@ -114,7 +118,13 @@ app.post('/signupUser', function(req,res,next){
     //if user does exist return an error
 
     //if a user with email does not exist, create / save user 
-    res.redirect('/login');
+    if(error){
+        res.redirect('/signup');
+
+    }else {
+        res.redirect('/login');
+
+    }
     //respond to request
 });
 

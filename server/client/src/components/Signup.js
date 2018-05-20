@@ -34,6 +34,7 @@ class Signup extends Component{
         .then(response => {
             console.log(response);
         });
+        this.props.fetchUser();
     }
     render(){
 
@@ -47,6 +48,7 @@ class Signup extends Component{
     <input type="text" name="username" placeholder="Email" value={this.state.email} onChange={this.handleEmailChange} />
           <input type="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handlePasswordChange}/>
           </div>
+          {/* <button type="submit" onClick={this.handleSubmit}>Sign Up</button> */}
           <button type="submit" onClick={this.handleSubmit}>Sign Up</button>
 
 
