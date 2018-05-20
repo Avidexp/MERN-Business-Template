@@ -43,7 +43,7 @@ class Header extends Component{
            <Link className="left brand-logo" 
         //    Different route if user is authenticated (logged in)
             to={this.props.auth ? "/" : "/"} 
-           >Need A Tool</Link>
+           >Ballin On A Budget</Link>
            <ul className="right">
            {this.renderContent()}
 
