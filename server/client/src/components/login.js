@@ -37,15 +37,27 @@ class Login extends Component{
     render(){
 
         return(
-            <div>
-        <form action="http://localhost:3000/loginUser" method="post">
-            <div>
-        <input type="text" name="username" placeholder="username" value={this.state.email} onChange={this.handleEmailChange} />
-                <input type="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handlePasswordChange}/>
-                </div>
-                <button type="submit" onClick={this.handleSubmit}>Login</button>
-        
-</form>
+            <div><div className="container center">
+                  <div className="row">
+        <div className="col s12">
+        <div className="card">
+        <div className="card-content">
+            <form action="http://localhost:3000/loginUser" method="post">
+                <div>
+            <input type="text" name="username" placeholder="username" value={this.state.email} onChange={this.handleEmailChange} />
+                    <input type="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handlePasswordChange}/>
+                    </div>
+                    <button class="btn waves-effect waves-light" type="submit" onClick={this.handleSubmit} >Submit
+                        <i class="material-icons right"></i>
+                    </button>
+                    
+            
+            </form>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
             </div>
         )
     }

@@ -7,14 +7,24 @@ class Header extends Component{
     renderContent(){
         switch(this.props.auth){
             case null:
-                return;
+                return(<div>
+                    <li>
+                    <Link to="/signup">Sign Up</Link>
+                </li>    
+                <li>
+                    <Link to="/login">Login</Link>
+                </li>       
+                    <li>
+                        <a href="/auth/google">Login With Google</a>
+                    </li>  
+                    </div>    );
             case false:
                 return (<div>
                 <li>
-                    <a href="/signup">Sign Up</a>
+                    <Link to="/signup">Sign Up</Link>
                 </li>    
                 <li>
-                    <a href="/login">Login</a>
+                    <Link to="/login">Login</Link>
                 </li>        
                 <li>
                     <a href="/auth/google">Login With Google</a>
