@@ -19,8 +19,32 @@ class Dashboard extends Component{
         
         return(
             <div>
-                
-                 {this.state.user ? <h1>Welcome, {this.state.user.firstName}</h1>  : <p></p>}
+                <div class="container">
+                <div class="row">
+                <div class="col s6">
+                <div class="card">
+                <div class="card-content">
+                <span class="card-title">Financials</span>
+                 {this.state.user ? <div>
+                     <h2>Welcome, {this.state.user.firstName}</h2>  
+                     <h3> Your balance is: {this.state.user.credits}</h3>
+                     </div>: <p></p>}
+                </div>
+                </div>
+                </div>
+                <div class="col s6">
+                <div class="card">
+                <div class="card-content">
+                <span class="card-title">Analytics</span>
+                 {this.state.user ? <div>
+                     <h2>Welcome, {this.state.user.firstName}</h2>  
+                     <h3> Your balance is: {this.state.user.credits}</h3>
+                     </div>: <p></p>}
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
             </div>
         )
     }
