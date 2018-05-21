@@ -16,7 +16,10 @@ module.exports = async (app) =>{
               });
               //to add credits after successfull payment
               //req.user is defaulted with passport
+              console.log(charge);
               req.user.credits += req.body.credits;
+   
+              req.user.charges.push(charge);
               const user = await req.user.save();
               res.send(user);
         }

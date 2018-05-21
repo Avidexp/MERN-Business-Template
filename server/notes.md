@@ -1,9 +1,14 @@
 
 
 /*
+For financial calculations:
+
+	financejs
+
+	https://github.com/essamjoubori/finance.js
 
 
-	
+
 // Write a function to retrieve a blob of json
 // make an ajax request using the 'fetch function. 
 http://rallycoding.herokuapp.com/api/music_albums
