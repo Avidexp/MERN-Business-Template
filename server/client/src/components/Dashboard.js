@@ -44,6 +44,23 @@ class Dashboard extends Component{
                 </div>
                 </div>
                 </div>
+
+                 <div class="row">
+                <div class="col s6">
+                <div class="card">
+                <div class="card-content">
+                <span class="card-title">Profile</span>
+                 {this.state.user ? <div>
+                     <h5>First Name: {this.state.user.firstName}</h5>  
+                     <h5>Last Name: {this.state.user.lastName}</h5>  
+                     <h5>Email: {this.state.user.email}</h5>  
+                     <h5>Credits: {this.state.user.credits}</h5>
+                     </div>: <p></p>}
+                </div>
+                </div>
+                </div>
+                
+                </div>
                 </div>
             </div>
         )
