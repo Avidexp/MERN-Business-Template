@@ -8,17 +8,24 @@ Nodemon     |     npm install nodemon
 
 
 
+
 Setup:
 
+
   cd into /server:
+
       -|  npm install
   
   cd into /server/client:
+
       -|  npm install
-      
-      
+
+
+
+Execution:
       
   cd into /server (cd ../):
+
       -|  npm start
       
       
