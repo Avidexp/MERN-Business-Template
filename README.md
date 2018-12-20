@@ -2,14 +2,14 @@
 (Incredibly) Simple template with authentication (passport) & payment processing (stripe)
 
 
-Requirements:
+##Requirements:
 
 Nodemon     |     npm install nodemon
 
 
 
 
-Setup:
+##Setup:
 
 
   cd into /server:
@@ -22,7 +22,7 @@ Setup:
 
 
 
-Execution:
+##Execution:
       
   cd into /server (cd ../):
 
