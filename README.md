@@ -13,12 +13,12 @@ Setup:
   cd into /server:
       -|  npm install
   
-  cd into /server/client
+  cd into /server/client:
       -|  npm install
       
       
       
-  cd into /server (cd ../)
+  cd into /server (cd ../):
       -|  npm start
       
       
