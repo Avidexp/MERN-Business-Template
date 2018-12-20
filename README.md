@@ -9,7 +9,7 @@ Nodemon     |     npm install nodemon
 
 
 
-##Setup:
+**Setup:**
 
 
   cd into /server:
@@ -22,7 +22,7 @@ Nodemon     |     npm install nodemon
 
 
 
-##Execution:
+ **Execution:**
       
   cd into /server (cd ../):
 
