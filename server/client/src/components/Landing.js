@@ -5,8 +5,8 @@ class Landing extends Component{
     render(){
         return(
             <div style={{textAlign: 'center'}}>
-                <h1>Welcome to your new app!</h1>
-                Collect feedback from your users
+                <h1>Key Performance</h1>
+                <h6>Home Page</h6>
             </div>
         )
     }
